@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSec4 = () => {
   return (
-    <div className='bg-red-400 mt-2 p-12'>
+    <div className=' mt-2 p-12'>
       <div className='bg-[#001032] text-[#FFFFFFCC] text-5xl font-semibold tracking-wide p-8 w-fit rounded-2xl'>
        <h1 >A system that evolves with you</h1>
       </div>
