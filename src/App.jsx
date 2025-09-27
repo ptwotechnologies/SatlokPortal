@@ -3,6 +3,12 @@ import About from './pages/About'
 import Home from './pages/Home'
 import Navbar from './pages/Navbar'
 import {  Route, Routes } from 'react-router-dom'
+import ServiceProfessional from './pages/ServiceProfessional'
+import Startup from './pages/Startup'
+import Investor from './pages/Investor'
+import Pricing from './pages/Pricing'
+import ChannelPartner from './pages/ChannelPartner'
+import ContactUs from './pages/ContactUs'
 
 
 function App() {
@@ -15,7 +21,12 @@ function App() {
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        
+         <Route path="/serviceprofessional" element={<ServiceProfessional/>} />
+         <Route path="/startup" element={ <Startup/>} />
+         <Route path="/investor" element={  <Investor/>} />
+         <Route path="/pricing" element={ <Pricing/>} />
+          <Route path="/channelpartner" element={ <ChannelPartner/>} />
+          <Route path="/contact" element={ <ContactUs/>} />
       </Routes>
     </div>
   )

@@ -59,14 +59,14 @@ const HomeSection1 = () => {
             <div className="flex justify-start items-center gap-3 mt-10">
               <div className="w-8 h-8 bg-[#001032]"></div>
               <p className="leading-8 tracking-wider">
-                {" "}
+               
                 Investors are already waiting for startups like you
               </p>
             </div>
             <div className="flex justify-start items-center gap-3 mt-10">
               <div className="w-8 h-8 bg-[#001032]"></div>
               <p className="leading-8 tracking-wider">
-                {" "}
+               
                 Investors are already waiting for startups like you
               </p>
             </div>
