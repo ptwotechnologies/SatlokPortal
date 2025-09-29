@@ -9,6 +9,7 @@ import Investor from './pages/Investor'
 import Pricing from './pages/Pricing'
 import ChannelPartner from './pages/ChannelPartner'
 import ContactUs from './pages/ContactUs'
+import JoinUs from './pages/JoinUs'
 
 
 function App() {
@@ -17,7 +18,6 @@ function App() {
   return (
     <div className='bg-white w-full h-screen  '>
       <Navbar/>
-      
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -27,6 +27,7 @@ function App() {
          <Route path="/pricing" element={ <Pricing/>} />
           <Route path="/channelpartner" element={ <ChannelPartner/>} />
           <Route path="/contact" element={ <ContactUs/>} />
+           <Route path="/joinUs" element={ <JoinUs/>} />
       </Routes>
     </div>
   )
