@@ -82,7 +82,7 @@ const JoinSec4 = () => {
                    If your work fits any of these lanes and you want a quieter, more direct way to find serious clients, this portal is for you</h1>
                    <p className='text-[#001032] mt-3 font-medium p-2 lg:text-sm text-lg pb-15 lg:pb-0' >And if you’ve worked with startups before? That’s even better!</p>
             </div>
-            <hr className='lg:hidden bg-[#00000033] mx-5'/>
+            
          </div>
   )
 }

@@ -8,19 +8,19 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 const NavbarSheet = () => {
   return (
     <div>
       <div className=" hidden lg:block text-lg">
-        <button className="mr-4 underline p-2 px-5 cursor-pointer hover:scale-105 duration-300 ease-in-out">
+        <Link to="/login"><button className="mr-4 underline p-2 px-5 cursor-pointer hover:scale-105 duration-300 ease-in-out">
           Sign in
-        </button>
-        <button className="bg-[#002A30] text-white p-2 px-5 cursor-pointer rounded-sm hover:bg-white hover:text-[#002A30] 
+        </button></Link>
+        <Link to="/login"><button className="bg-[#002A30] text-white p-2 px-5 cursor-pointer rounded-sm hover:bg-white hover:text-[#002A30] 
         hover:border hover:border-[#002A30] duration-300 ease-in-out">
           Sign up
-        </button>
+        </button></Link>
       </div>
 
       <div className="lg:hidden">
