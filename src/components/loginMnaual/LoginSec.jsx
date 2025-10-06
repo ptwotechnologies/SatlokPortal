@@ -25,7 +25,7 @@ const LoginSec = () => {
           <p className=" text-[#001426] text-xl relative bottom-25 left-17   ">resources and investor connect</p>
           </div>
           <div >
-            <p className="  text-lg w-full  text-[#000000] relative top-10 left-30" >Terms, Privacy Disclosures Cookie Settings © Artestor Technologies LLP</p>
+            <p className="  text-lg w-full  text-[#000000] relative top-10 left-30" >Terms, Privacy Disclosures Cookie Settings © norf.kD Technologies LLP</p>
           </div>
          </div>
         </div>

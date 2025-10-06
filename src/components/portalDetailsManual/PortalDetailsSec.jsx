@@ -22,27 +22,22 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import Calendar2 from './Calendar2';
+import Calendar2 from '../registerPortalManual/Calendar2';
 
+const PortalDetailsSec = () => {
 
-
-
-const RegisterPortal = () => {
-
-  const [activeTab, setActiveTab] = useState('Business Type');
-
-  
-
-  const tabs = [
-    { id: 'Manufacturing', label: ' Manufacturing ' },
-    { id: 'Service', label: 'Service' },
-     
-  ];
-
- 
-
+    const [activeTab, setActiveTab] = useState('Reason for joining the portal');
+    
+      
+    
+      const tabs = [
+        { id: 'Manufacturing', label: ' Manufacturing ' },
+        { id: 'Service', label: 'Service' },
+         
+      ];
+    
   return (
-     <div>
+    <div>
       <div className="flex justify-between items-center  ">
         <div id="left" className=" w-[40%] hidden lg:block mx-auto ">
                  <div className="flex flex-col justify-between items-center gap-y-25">
@@ -56,7 +51,7 @@ const RegisterPortal = () => {
                   </div>
                  </div>
                 </div>
-        <div id="right" className="lg:w-[47%] lg:pl-20 lg:px-10 lg:py-5 text-center h-screen  w-full">
+        <div id="right" className="lg:w-[47%] lg:pl-20 lg:px-10 lg:py-2 text-center h-screen  w-full">
           <div className="bg-[#001426] h-screen lg:h-auto p-5 lg:p-3 w-[100%]  lg:rounded-lg ">
             <Card className="w-full h-[100%] lg:h-auto mx-auto rounded-lg">
               <CardHeader>
@@ -72,66 +67,12 @@ const RegisterPortal = () => {
                 <form>
                   <div className="flex flex-col gap-3">
                     <div className="grid gap-2 ">
-                      <Input
-                        id="email"
-                        type="email"
-                        placeholder="Email or Phone"
-                        required
-                        className="p-5 font-medium text-[#00103280]"
-                      />
-                    </div>
-                    <div className="grid gap-2">
-                      <Input
-                        id="password"
-                        type="password"
-                        placeholder="Password"
-                        required
-                        className="p-5 font-medium text-[#00103280]"
-                      />
-                    </div>
-                    <div className="grid gap-2">
-                      <Input
-                        id="password"
-                        type="password"
-                        placeholder="Mobile or Phone"
-                        required
-                        className="p-5 font-medium text-[#00103280]"
-                      />
-                    </div>
-                    <div className="grid gap-2">
-                      <Input
-                        id="password"
-                        type="password"
-                        placeholder="Business Name"
-                        required
-                        className="p-5 font-medium text-[#00103280]"
-                      />
-                    </div>
-                    <div className="grid gap-2">
-                      <Input
-                        id="password"
-                        type="password"
-                        placeholder="Business Email"
-                        required
-                        className="p-5 font-medium text-[#00103280]"
-                      />
-                    </div>
-                    <div className="grid gap-2">
-                      <Input
-                        id="password"
-                        type="password"
-                        placeholder="Website"
-                        required
-                        className="p-5 font-medium text-[#00103280]"
-                      />
-                    </div>
-                    <div className="grid gap-2 lg:hidden">
-                     <div className=' w-full '>
+                     <div className=' w-full hidden lg:block'>
                       <DropdownMenu className="bg-red-300 w-full" >
                               <div className="border border-[#0010321A] w-full px-3 p-2.5 rounded-md"  >
-                                <DropdownMenuTrigger className='flex items-center gap-35 '>
-                                <button className='text-[#00103280] font-medium   '>{activeTab}</button>
-                                 <div className='w-[20%]  '>
+                                <DropdownMenuTrigger className='flex  w-full justify-between items-center  '>
+                                <button className='text-[#00103280] font-medium  '>{activeTab}</button>
+                                 <div className=' lg:w-[10%] w-[17%] '>
                                   <IoIosArrowDown  className='mt-2  w-20 ' />
                                  </div>
                                 </DropdownMenuTrigger>
@@ -148,15 +89,70 @@ const RegisterPortal = () => {
                           
                          </div>
                     </div>
-                    <div className="grid gap-2 lg:hidden">
-                      <Calendar2/>
+                    <div className="grid gap-2  ">
+                        <div className='hidden lg:block'>
+                             <Calendar2/>
+                        </div>
+                     
                     </div>
+                    <div className="grid gap-2">
+                      <Input
+                        id="text"
+                        type="text"
+                        placeholder="Pitch Deck Upload"
+                        required
+                        className="p-5 font-medium text-[#00103280]"
+                      />
+                    </div>
+                    <div className="grid gap-2">
+                      <Input
+                        id="text"
+                        type="text"
+                        placeholder="Profile Upload"
+                        required
+                        className="p-5 font-medium text-[#00103280]"
+                      />
+                    </div>
+                    <div className="grid gap-2">
+                      <Input
+                        id="text"
+                        type="text"
+                        placeholder="Linkedin Profile"
+                        required
+                        className="p-5 font-medium text-[#00103280]"
+                      />
+                    </div>
+                      <div className="grid gap-2 ">
+                     <div className=' w-full '>
+                      <DropdownMenu className="bg-red-300 w-full" >
+                              <div className="border border-[#0010321A] w-full px-3 p-2.5 rounded-md"  >
+                                <DropdownMenuTrigger className='flex  w-full justify-between items-center  '>
+                                <button className='text-[#00103280] font-medium  '>{activeTab}</button>
+                                 <div className=' lg:w-[10%] w-[17%]'>
+                                  <IoIosArrowDown  className='mt-2  w-20 ' />
+                                 </div>
+                                </DropdownMenuTrigger>
+                              </div>
+                              <DropdownMenuContent className='mt-5'>
+                                 {tabs.map((tab) => (
+                                        <DropdownMenuItem key={tab.id} onClick={() => setActiveTab(tab.id)} className="text-xl text-[#00103280]">
+                                          {tab.label}
+                                        </DropdownMenuItem>
+                                      ))}
+                              </DropdownMenuContent>
+                            </DropdownMenu>
+                              
+                          
+                         </div>
+                    </div>
+                    
+                    
                   </div>
                 </form>
               </CardContent>
               <CardFooter className="flex-col gap-2 mt-4">
                
-                <Link to="/selectPortal" className="w-full"><Button  className="w-full bg-[#001426]">
+                <Link to="/selectPortal" className="w-full"><Button  className="w-full bg-[#001426] relative top-50 lg:top-0">
                   Continue
                 </Button></Link>
                 
@@ -171,4 +167,4 @@ const RegisterPortal = () => {
   )
 }
 
-export default RegisterPortal
+export default PortalDetailsSec

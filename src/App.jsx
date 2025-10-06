@@ -13,6 +13,14 @@ import JoinUs from './pages/JoinUs'
 import Login from './pages/Login'
 import SelectPortal from './pages/SelectPortal'
 import RegisterPortal from './pages/RegisterPortal'
+import PortalDetails from './pages/PortalDetails'
+import OnBoardingPlans from './pages/OnBoardingPlans'
+import Scanner from './pages/Scanner'
+import PaymentSuccess from './pages/PaymentSuccess'
+import PasswordReset from './pages/PasswordReset'
+import PasswordResetOtp from './pages/PasswordResetOtp'
+import NewPassword from './pages/NewPassword'
+import PasswordChanged from './pages/PasswordChanged'
 
 
 function App() {
@@ -20,8 +28,9 @@ function App() {
 
   return (
     
-      <div className='bg-white w-full h-screen  '>
-      {/* <Navbar/> */}
+      <div>
+        <div className='bg-white w-full h-screen  '>
+       {/* <Navbar/>  */}
        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -32,12 +41,23 @@ function App() {
           <Route path="/channelpartner" element={ <ChannelPartner/>} />
           <Route path="/contact" element={ <ContactUs/>} />
            <Route path="/joinUs" element={ <JoinUs/>} />
-            <Route path="/login" element={ <Login/>} />
+           <Route path="/login" element={ <Login/>} />
             <Route path="/selectPortal" element={ <SelectPortal/>} />
             <Route path="/registerPortal" element={ <RegisterPortal/>} />
-            
+            <Route path="/portalDetails" element={ <PortalDetails/>} />
+            <Route path="/onboardingplans" element={ <OnBoardingPlans/>} />
+            <Route path="/scanner" element={ <Scanner/>} />
+            <Route path="/paymentsuccess" element={ <PaymentSuccess/>} />
+            <Route path="/passwordreset" element={ <PasswordReset/>} />
+             <Route path="/passwordreset" element={ <PasswordReset/>} />
+             <Route path="/passwordresetotp" element={ <PasswordResetOtp/>} />
+             <Route path="/newpassword" element={ <NewPassword/>} />
+             <Route path="/passwordchanged" element={ <PasswordChanged/>} />
       </Routes>
     </div>
+ 
+ 
+      </div>
    
   )
 }
