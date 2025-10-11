@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "/loginLogo.jpeg";
+import logo from "/loginlogo.png";
 import { Button } from "@/components/ui/button";
 import { IoIosArrowDown } from "react-icons/io";
 

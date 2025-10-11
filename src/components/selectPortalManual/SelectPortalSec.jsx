@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "/loginLogo.jpeg";
+import logo from "/loginlogo.png";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";

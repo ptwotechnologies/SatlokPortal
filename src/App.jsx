@@ -21,6 +21,7 @@ import PasswordReset from './pages/PasswordReset'
 import PasswordResetOtp from './pages/PasswordResetOtp'
 import NewPassword from './pages/NewPassword'
 import PasswordChanged from './pages/PasswordChanged'
+import Profile from './pages/Profile'
 
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
              <Route path="/passwordresetotp" element={ <PasswordResetOtp/>} />
              <Route path="/newpassword" element={ <NewPassword/>} />
              <Route path="/passwordchanged" element={ <PasswordChanged/>} />
+              <Route path="/profile" element={ <Profile/>} />
       </Routes>
     </div>
  
